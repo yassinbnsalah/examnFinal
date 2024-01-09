@@ -1,0 +1,17 @@
+<h1> {{menu.title}}</h1>
+<p> Image here </p>
+
+<p> {{menu.description }}</p>
+<p *ngIf="menu.mark != 0"> 
+    Mark : {{menu.mark}}
+</p>
+
+<p *ngIf="menu.mark == 0"> 
+    Aucune note n'est attrivuée a ce menu 
+</p>
+<form [formGroup]="MarkForm"> 
+    <input type="text" class="form-control" id="Mark" 
+    formControlName="Mark" placeholder="Mark">
+    <button [disabled]="MarkForm.invalid" (click)="updateMenuMark()">Noter</button>
+    <span *ngIf="MarkForm.get('Mark')?.errors?.['pattern']" style="color:red">Mark must be from 1 to 5 </span><br>
+</form>

@@ -5,9 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NavBarComponent } from './core/nav-bar/nav-bar.component';
+import { HomeComponent } from './core/home/home.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { MenuComponent } from './menu/menu.component';
+import { MenuDetailsComponent } from './menu-details/menu-details.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    HomeComponent,
+    FooterComponent,
+    NotFoundComponent,
+    MenuComponent,
+    MenuDetailsComponent
   ],
   imports: [
     BrowserModule,

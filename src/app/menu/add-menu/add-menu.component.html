@@ -1,0 +1,12 @@
+<h1> Menu proposer </h1>
+<form [formGroup]="MenuForm">
+    <label> Titre </label>
+    <input type="text" class="form-control" id="titre" 
+    formControlName="title" placeholder="title"> <br>
+    <span *ngIf="MenuForm.get('title')?.errors?.['required']" style="color:red">Titre is Required </span><br>
+    <label> Description -</label>
+    <textarea class="form-control" id="description" 
+    formControlName="description" placeholder="description"></textarea><br>
+    <span *ngIf="MenuForm.get('description')?.errors?.['minlength']" style="color:red">il faut saisir au moins 10 carac </span><br>
+    <button  [disabled]="MenuForm.invalid" (click)="addMenu()"> save </button>
+</form>

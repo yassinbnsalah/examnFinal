@@ -1,0 +1,41 @@
+{
+    "Menu": [
+        {
+            "title": "test",
+            "image": "string",
+            "description": "testtesttest",
+            "approved": false,
+            "mark": 1.5,
+            "reservations": [
+                1,
+                2,
+                3,
+                5
+            ],
+            "id": 2
+        },
+        {
+            "title": "me2",
+            "image": "string",
+            "description": "FFF",
+            "approved": false,
+            "mark": 1.5,
+            "reservations": [
+                5
+            ],
+            "id": 3
+        },
+        {
+            "title": "m3",
+            "image": "string",
+            "description": "ED",
+            "approved": false,
+            "mark": 1.5,
+            "reservations": [
+                1
+               
+            ],
+            "id": 4
+        }
+    ]
+}
